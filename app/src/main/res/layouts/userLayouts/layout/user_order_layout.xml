@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/userorder_r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/Adminordercolor">
+
+            <TextView
+                android:id="@+id/userorder_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete"
+                android:background="@color/red"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="6dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/userorder_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/userorder_time"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/userorder_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="shopname"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/userorder_orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="oid"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/userorder_shopname"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/userorder_totalprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="total"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/userorder_orderid" />
+
+            <TextView
+                android:id="@+id/userorder_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:layout_below="@id/userorder_totalprice"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/userorder_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:layout_below="@id/userorder_totalprice"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/userorder_userviewbtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/userorder_time"
+                android:textColor="@android:color/black"
+                android:text="view products"
+                android:background="@color/colorPrimaryDark"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

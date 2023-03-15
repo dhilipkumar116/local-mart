@@ -1,0 +1,2 @@
+rootProject.name='LocalMart'
+include ':app'

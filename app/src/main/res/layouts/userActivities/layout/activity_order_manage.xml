@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity.orderManageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="2dp"
+            android:elevation="15dp"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="order status:"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                    android:id="@+id/your_state_progress_bar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    app:spb_animateToCurrentProgressState="true"
+                    app:spb_checkStateCompleted="true"
+                    app:spb_currentStateDescriptionColor="@color/colorPrimary"
+                    app:spb_currentStateNumber="one"
+                    app:spb_maxStateNumber="five"
+                    app:spb_stateBackgroundColor="@color/colorPrimary"
+                    app:spb_stateDescriptionColor="@color/colorPrimary"
+                    app:spb_stateForegroundColor="@color/colorPrimary"
+                    app:spb_stateNumberBackgroundColor="#808080"
+                    app:spb_stateNumberForegroundColor="#eeeeee"
+                    app:spb_stateDescriptionSize="10sp"
+                    app:spb_descriptionTopSpaceIncrementer="5dp"/>
+
+                <TextView
+                    android:id="@+id/estimatedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="estimated time"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:elevation="15dp"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/codORcos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:textColor="@android:color/white"
+                android:layout_gravity="end"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="shop info:"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shopinfo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shopinfo_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="phone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shopinfo_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="email"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shopinfo_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="street"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shopinfo_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="district"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shopinfo_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="pincode"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:elevation="15dp"
+            android:padding="5dp"
+            android:id="@+id/delivery_cardView">
+            <LinearLayout
+                android:id="@+id/delivery_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="delivery info:"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/delivery_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="name : - "
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/delivery_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="phonenumber : - "
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/delivery_vehicleNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="vehicle num : - "
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/delivery_vehicleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="vehicle type : - "
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/delivery_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="order amount : - "
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/delivery_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttons"
+                    android:drawableStart="@drawable/ic_call_black_24dp"
+                    android:text="make a call"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:elevation="15dp"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/cancelordermanage_infotitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cancel order:"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/cancelordermanage_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="order id"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cancelordermanage_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="order date and time"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cancelordermanage_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="order amount"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/cancel_order_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttons"
+                    android:drawableStart="@drawable/ic_call_black_24dp"
+                    android:text="make a call"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/cancel_order_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/buttons"
+                    android:text="cancel order"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".userActivity.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/User_setting_profile_image"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/dummy_profile"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/User_profile_image_change_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change profile"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e mail :"
+                android:textSize="13sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/User_setting_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email id"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:inputType="textEmailAddress" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone number :"
+                android:textSize="13sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/User_setting_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone number"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:inputType="phone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="user name :"
+                android:textSize="13sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/User_setting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="user name"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="password :"
+                android:textSize="13sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <EditText
+                    android:id="@+id/User_setting_password"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:hint="shop password"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/hide_pass_icon_U"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/hide"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address :"
+                android:textSize="13sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/User_setting_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="address"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/User_update_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:text="save changes"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

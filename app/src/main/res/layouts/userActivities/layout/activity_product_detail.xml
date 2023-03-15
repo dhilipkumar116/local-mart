@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity.ProductDetailActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_det_c1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="4dp"
+        android:layout_weight="75">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/product_detials_cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_weight="40">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/product_detials_image"
+                        android:elevation="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:background="@color/quantum_grey300"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/product_Sold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 sold"
+                    android:textColor="@color/white"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/buttons"
+                    android:padding="3dp"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/product_detials_cardview1"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="60">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_detials_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:text="product name"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/product_detials_sellingprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text=" sell p "
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/product_detials_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text=" discount "
+                                android:textColor="@color/green"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/product_detials_mrp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text=" mrp "
+                                android:textColor="@color/red"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/product_detials_noofproduct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text=" no of product "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/product_detials_product_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text=" type "
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text=" description :"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/product_detials_descreption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text=" description "
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp">
+
+                            <ImageView
+                                android:id="@+id/product_detials_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="25dp"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp">
+
+                            <ImageView
+                                android:id="@+id/product_detials_wishlistbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/unwishlist_icon" />
+
+                            <ImageView
+                                android:id="@+id/product_detials_unwishlistbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/wishlist_icon"
+                                android:visibility="gone" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/product_detials_elegantbtn"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            app:finalNumber="20"
+                            app:initialNumber="1">
+
+                        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                        <LinearLayout
+                            android:layout_gravity="end"
+                            android:id="@+id/disable_btn_layout"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:background="@color/transparent"
+                            android:visibility="invisible"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+
+                        <Button
+                            android:id="@+id/product_detials_cartbtn"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/buttons"
+                            android:gravity="center"
+                            android:text="add to cart"
+                            android:textColor="@android:color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/product_det_c1"
+        android:layout_weight="25">
+
+
+        <TextView
+            android:id="@+id/todayoffer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="categories : "
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/product_det_c1"
+            android:textSize="15sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizon_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

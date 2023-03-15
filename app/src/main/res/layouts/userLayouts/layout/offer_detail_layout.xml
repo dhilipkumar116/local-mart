@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/offerdetails_proname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:text="dfsdfwefk"
+            android:textSize="17sp"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+
+        <ImageView
+            android:id="@+id/offerdetails_protype"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/veg"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
